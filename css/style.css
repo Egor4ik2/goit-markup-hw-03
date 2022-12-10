@@ -32,6 +32,11 @@ p
 {
     margin: 0;
 }
+.main-nav
+{
+    align-items: center;
+    display: flex;
+}
 
 .container
 {
@@ -43,6 +48,7 @@ p
 
 .list
 {
+    padding: 0;
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
@@ -58,7 +64,12 @@ p
 
 
 /* logo design */
-
+.header
+{
+    padding-top: 24px;
+    padding-bottom: 24px;
+   
+}
 
 .color-web
 {
@@ -69,6 +80,7 @@ p
     line-height: 1.3;
     font-weight: 800;
     text-decoration: none;
+    
 }
 
 .color-web:focus
@@ -85,6 +97,7 @@ p
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
+    margin-right: 77px;
 }
 
 /* navigation design */
@@ -93,46 +106,29 @@ p
 
 .navigation
 {
+    display: flex;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 600;
 }
 
-.studio
+.navigation li:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+
+.item
 {
     text-decoration: none;
     color: var(--main-color-text);
 }
 
-.studio:focus, .studio:hover
+.item:hover, .item:focus
 {
-    color:var(--main-color-focus);
+    color: var(--main-color-focus);
 }
-
-.portfolio
-{
-    text-decoration: none;
-    color: var(--main-color-text);
-}
-
-.portfolio:focus, .portfolio:hover
-{
-    color:var(--main-color-focus);
-}
-
-
-.support
-{
-    text-decoration: none;
-    color: var(--main-color-text);
-}
-
-.support:focus, .support:hover
-{
-    color:var(--main-color-focus);
-}
-
 
 /*adress design */
 
@@ -141,26 +137,24 @@ p
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.mail
-{
     color:var(--second-color-text);
     text-decoration:none;
 }
-.mail:focus, .mail:hover
+
+.adress:focus, .adress:hover
 {
     color:var(--main-color-focus);
 }
 
-.tel
+.contact
 {
-    color:var(--second-color-text);
-    text-decoration:none;
+    display: flex;
+    margin-left:auto
 }
-.tel:focus, .tel:hover
+
+.contact li:not(:last-child)
 {
-    color:var(--main-color-focus);
+    margin-right: 40px ;
 }
 
 
