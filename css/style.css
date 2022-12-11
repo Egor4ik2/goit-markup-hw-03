@@ -66,6 +66,7 @@ p
 /* logo design */
 .header
 {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     padding-top: 24px;
     padding-bottom: 24px;
    
@@ -165,17 +166,19 @@ p
 .section-title
 {
     margin-bottom: 120px;
-    text-align: center;
     height: 603px;
     background-color:var(--main-color-text);
 }
 
 .title-h-one
 {
+    margin:0;
+    margin-right: auto;
+    margin-left:auto;
     padding-top: 192px;
     padding-bottom: 48px;
-    margin:0;
     color:var(--main-color-white);
+    max-width: 492px;
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
@@ -185,7 +188,10 @@ p
 
 .button-h-one
 {
-    
+    display: block;
+    margin: 0;
+    margin-right: auto;
+    margin-left:auto;
     min-width: 170px;
     border-radius: 4px;
     padding: 16px 32px;
@@ -211,8 +217,8 @@ p
 
 .recomends
 {
-    
     display: flex;
+    height:380px;
 }
 
 .recomends li:not(:first-child)
@@ -260,6 +266,8 @@ p
 .color-card
 {
     background-color: var(--main-color-white);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px
 }
 .card-bgc
 {
@@ -324,7 +332,7 @@ p
 .team
 {
     
-    margin-top: 0;
+    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -369,7 +377,15 @@ p
 
 /* section 1*/
 
+.buttons
+{
+    display: inline-flex;
+}
 
+.buttons li:not(:last-child)
+{
+    margin-right: 24px;
+}
 
 .nav-portfolio
 {
@@ -511,4 +527,9 @@ p
     margin: 0;
     text-indent: -9999em;
     outline: 0;
+}
+
+.card-border
+{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
