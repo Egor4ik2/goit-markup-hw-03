@@ -42,6 +42,8 @@ p
 {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 1158px;
     
 }
@@ -165,7 +167,8 @@ p
 
 .section-title
 {
-    margin-bottom: 120px;
+    padding-top: 192px;
+    padding-bottom: 192px;
     height: 603px;
     background-color:var(--main-color-text);
 }
@@ -175,14 +178,14 @@ p
     margin:0;
     margin-right: auto;
     margin-left:auto;
-    padding-top: 192px;
-    padding-bottom: 48px;
+    margin-bottom:48px;
     color:var(--main-color-white);
-    max-width: 492px;
+    max-width: 500px;
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
 
 }
 
@@ -218,7 +221,6 @@ p
 .recomends
 {
     display: flex;
-    height:380px;
 }
 
 .recomends li:not(:first-child)
@@ -228,6 +230,8 @@ p
 .section-h-two
 {
     
+    padding-top: 120px;
+    padding-bottom: 120px;
     color: var(--second-color-text);
     font-size: 16px;
     line-height: 1.5;
@@ -260,7 +264,7 @@ p
 /* section 3 */
 .section
 {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .color-card
@@ -271,13 +275,14 @@ p
 }
 .card-bgc
 {
-    background-color: var(--color-of-card);
+    
     padding-bottom: 120px;
 }
 
 .about-us 
 {
-
+    margin: 0;
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     line-height: 1.1;
@@ -287,8 +292,8 @@ p
 
 .we
 {
-    margin-top: 120px;
-    margin-bottom: 72px;
+    /* margin-top: 120px;
+    margin-bottom: 72px; */
 }
 
 .img
@@ -301,15 +306,20 @@ p
 }
 /* section 4 */
 
+.section-h-three
+{
+    background-color: var(--color-of-card);
+    padding-top: 120px;
+}
 .our-team
 {
-    padding-bottom: 72px;
-    padding-top: 120px;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 72px;
     text-align: center;
     font-weight: 600;
     letter-spacing: 0.02em;
     font-size: 36px;
+    
 }
 
 .color-p
@@ -320,6 +330,7 @@ p
     letter-spacing: 0.02em;
     font-size: 16px;
     text-align: center;
+    margin-bottom: 32px;
 }
 
 
@@ -342,18 +353,17 @@ p
 .footer-p
 {
    width: 264px; 
-   padding-top: 16px;
+   margin-top: 16px;
 }
 .footer
 {
-    
+    padding-bottom: 100px;
     padding-top: 100px;
     background-color:var(--main-color-text);
     color:var(--color-cloud);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    height: 310px;
 }
 
 .studio-second
@@ -376,6 +386,11 @@ p
 
 
 /* section 1*/
+.section-portfolio
+{
+    padding-top: 96px;
+    padding-bottom:120px ;
+}
 
 .buttons
 {
@@ -394,7 +409,6 @@ p
     line-height: 1.5;
     letter-spacing: 0.04em;
     margin-bottom: 72px;
-    margin-top:92px;
 }
 .nav-all
 {
@@ -503,9 +517,9 @@ p
 .h-two
 {
     margin:0;
-    padding-top:32px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+   
+    margin-bottom: 8px;
+    
     color:var(--main-color-text);
     font-weight: 600;
     font-size: 20px;
@@ -515,8 +529,8 @@ p
 
 .p-portfolio
 {
-    padding-left: 16px;
-    padding-bottom: 32px;
+    /* padding-left: 16px;
+    padding-bottom: 32px; */
     color:var(--second-color-text);
     font-size: 16px;
     line-height: 1.5;
@@ -531,37 +545,61 @@ p
     letter-spacing: 0.02em;
 }
 
-.project
+.visually-hidden
 {
-    margin: 0;
+    /* margin: 0;
     text-indent: -9999em;
-    outline: 0;
+    outline: 0; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.image
+{
+    display: block;
 }
 
 .filters
 {
+    
     display: flex ;
     flex-wrap: wrap;
     
 }
 
+
 .card-border
 {
-    
     width: 360px;
-    
-    margin-bottom: 48px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    margin-bottom: 48px;
 }
+.card-border:nth-child(n + 7)
+{
+    margin-bottom: 0;
+} 
 .card-border:not(:nth-child(3n))
 {
     margin-right: 24px;
+    
 }
 
-.card-border:nth-last-child(-n + 3)
-{
-    margin-bottom: 48px;
-}
-
+ .p-shadow
+ {
+    border-top: none;
+    border: 0.5px solid #F4F4FD;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+ }
 
 
